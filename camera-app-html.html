@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Advanced Camera Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="viewfinder">
+            <video id="camera-feed" autoplay playsinline></video>
+            <canvas id="photo-canvas"></canvas>
+        </div>
+        <div id="controls">
+            <button id="switch-camera">Switch Camera</button>
+            <button id="capture-photo">Capture</button>
+            <button id="toggle-flash">Flash</button>
+        </div>
+        <div id="mode-selector">
+            <button class="mode-button active" data-mode="photo">Photo</button>
+            <button class="mode-button" data-mode="video">Video</button>
+            <button class="mode-button" data-mode="portrait">Portrait</button>
+        </div>
+        <div id="options">
+            <button id="timer">Timer</button>
+            <button id="filters">Filters</button>
+            <button id="aspect-ratio">Aspect Ratio</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
